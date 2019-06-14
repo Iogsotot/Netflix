@@ -1,0 +1,238 @@
+html {
+  background-color: #141414;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #000000;
+  color: #333;
+  font-size: 16px;
+  direction: ltr;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  z-index: 2;
+}
+
+/* XS почему-то не срабатывает в кнопках (а испольхуется только в них), 
+поэтому фонт-сайз засунула в стиль кнопки */
+
+/* .XS {
+  font-size: 0.875 rem;
+} */
+
+.S {
+  font-size: 1rem;
+}
+
+.M {
+  font-size: 1.2rem;
+}
+
+.L {
+  font-size: 1.875rem;
+}
+
+.XL {
+  font-size: 5rem;
+}
+
+.lg {
+  text-transform: uppercase;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.logo {
+  position: relative;
+  height: 45px;
+  width: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  margin-top: 3rem;
+}
+
+/* Кнопки */
+
+.btn {
+  display: block;
+  position: relative;
+  text-align: center;
+  border: 1px solid #e50914;
+  background-color: #e50914;
+  border-radius: 3px;
+  padding: 16px 19px;
+  letter-spacing: 1.9px;
+  width: max-content;
+  height: max-content;
+  font-size: 0.875rem;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn.S {
+  position: relative;
+  text-align: center;
+  border: 1px solid #e50914;
+  padding: 0.3rem 1rem;
+  background-color: #e50914;
+  border-radius: 3px;
+  vertical-align: middle;
+  float: right;
+  margin: 1.125rem 3% 0;
+}
+
+.btn.L {
+  display: block;
+  position: relative;
+  text-align: center;
+  border: 1px solid #e50914;
+  background-color: #e50914;
+  border-radius: 3px;
+  margin: 2.8rem auto 2rem;
+  padding: 1.75rem 2.5rem 1.75rem 3.25rem;
+  width: max-content;
+  font-size: 1.875rem;
+}
+
+.right-arrow {
+  margin-left: 1rem;
+}
+
+.main_scr p.M {
+  padding-top: 1rem;
+}
+
+.main_scr p a.L {
+  letter-spacing: 1.9px;
+}
+
+.main_scr {
+  position: relative;
+  top: 8%;
+  text-align: center;
+  vertical-align: middle;
+  bottom: 44px;
+  text-align: center;
+  max-width: 100%;
+  min-height: 550px;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.XL, .L {
+  margin: 0 0 1.875rem;
+}
+
+.XL, .L, .M, .S {
+  z-index: 2;
+  color: white;
+  position: relative;
+}
+
+.showcase {
+  background-image: url('imgs/bg.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 93vh;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  z-index: 1;
+}
+
+.showcase::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  background-size: auto;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .5) 100%), radial-gradient(50% 120%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .7) 100%);
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* @media (max-aspect-ratio: 160/100) and (min-width: 1000px) .bg {
+  width: auto;
+  height: 135%;
+  top: 60%;
+} */
+
+.tiny-nav {
+  background-color: #141414;
+  padding-top: 15px;
+  border-bottom: 2px solid #3d3d3d;
+}
+
+.tiny-nav-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 70%;
+  justify-items: center;
+  text-align: center;
+  cursor: pointer;
+  grid-gap: 0;
+}
+
+.tab-container {
+  height: 126px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.svg-icon {
+  fill: #777777;
+  display: block;
+  height: 49px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 0.6rem;
+}
+
+.white-active .svg-icon {
+  fill: #f3f3f3;
+}
+
+.tiny-nav div.S {
+  color: #777777;
+}
+
+.tiny-nav-list div.tab-container:hover .svg-icon, .tiny-nav-list div.tab-container:hover {
+  display: block;
+  fill: #f3f3f3;
+  color: #f3f3f3;
+}
+
+.white-active {
+  fill: #f3f3f3;
+  color: #f3f3f3 !important;
+}
+
