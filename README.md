@@ -9,7 +9,7 @@ Clik <a href='https://iogsotot.github.io/Netflix/'>here</a> to watch live-demo v
 * stylishly
 * nice table with pricies
 * adaptive
-* pixel pefect
+* pixel perfect
 
 
 ## <a name="ru">Netflix</a>   
@@ -22,5 +22,5 @@ Clik <a href='https://iogsotot.github.io/Netflix/'>here</a> to watch live-demo v
 * есть симпатичная таблица
 * адаптивный (растягивается, сжимается, всё красиво переигрывается в зависимости от экрана)
    * на момент создания моя версия была более адаптивной, чем оригинальная
-* pixel pefect
+* pixel perfect
 
